@@ -26,8 +26,8 @@ const searchElement = document.querySelector('input')
 const message1 = document.querySelector('#success')
 const message2 = document.querySelector('#failure')
 
-message1.textContent = 'Loading ......'
-message2.textContent = ''
+message1.textContent = 'Loading ......';
+message2.textContent = '';
 
 weatherForm.addEventListener('submit', (event) => {
     event.preventDefault()
