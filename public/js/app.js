@@ -7,7 +7,7 @@ console.log('Client side JS file is loaded')
     })
 }) */
 
-fetch('/weather?address=!').then((response) => {
+/* fetch('/weather?address=!').then((response) => {
     response.json().then((data) => {
         if(data.error){
             console.log(data.error)
@@ -18,7 +18,7 @@ fetch('/weather?address=!').then((response) => {
         
     })
 
-})
+}) */
 
 
 const weatherForm = document.querySelector('form')
@@ -34,7 +34,7 @@ weatherForm.addEventListener('submit', (event) => {
     const location = searchElement.value
     console.log(location)
 
-    fetch('http://localhost:3000/weather?address='+location).then((response) => {
+    fetch('/weather?address='+location).then((response) => {
     response.json().then((data) => {
         if(data.error){
             message1.textContent=data.error
